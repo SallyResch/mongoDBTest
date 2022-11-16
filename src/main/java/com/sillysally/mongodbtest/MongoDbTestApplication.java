@@ -36,6 +36,7 @@ public class MongoDbTestApplication implements CommandLineRunner {
         System.out.println("---------------------------------------------");
         System.out.println(repository.findByFirstName("Sally"));
 
+        //hitta alla kunder som heter samma efternamn
         System.out.println("Customers found with findByLastName('Martens'):");
         System.out.println("-----------------------------------------------");
         for (Customer customer : repository.findByLastName("Martens")){
